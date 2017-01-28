@@ -5,13 +5,17 @@ html{
     font-size: 10px;
 }
 
+.footer{
+    padding-bottom: 5vh;
+}
+
 .primaryText{
     font-family: 'Lato', sans-serif;
     font-size: 3.6em;
 }
 
 .header{
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .img-profile{

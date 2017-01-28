@@ -29,8 +29,6 @@
             </div>
         </div>
     </div>
-</div>
-<div class="container">
     <div class="row">
         <div class="col-md-12 article">
             <h2>Skills</h2>
@@ -100,6 +98,9 @@
             ?>
 
         </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 article footer"></div>
     </div>
 </div>
 
