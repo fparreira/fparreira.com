@@ -3,11 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Fernando Parreira</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
 </head>
 <body>
+
+<?php include_once("analyticstracking.php") ?>
 
 <div class="container">
     <div class="row header">
@@ -50,7 +52,7 @@
     </div>
     <div class="row">
         <div class="col-md-12 article">
-            <h2>Some Projects</h2>
+            <h2>Labs / Projects</h2>
             <?php
 
             $repos = array(
@@ -68,6 +70,11 @@
                     'name' => 'blob-laravel',
                     'url' => 'https://github.com/fparreira/blob-laravel',
                     'description' => 'Image blob example in Laravel (create and read)'
+                ),
+                array(
+                    'name' => 'Fabricjs - JSON - Lab',
+                    'url' => 'https://github.com/fparreira/fabricjs-json-lab',
+                    'description' => 'Fabricjs interactive objects on canvas, canvas-to-JSON and clone canvas'
                 ),
                 array(
                     'name' => 'jquery-randomBG',
