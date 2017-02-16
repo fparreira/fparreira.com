@@ -52,7 +52,7 @@
     </div>
     <div class="row">
         <div class="col-md-12 article">
-            <h2>Labs / Projects</h2>
+            <h2>Some Labs / Projects</h2>
             <?php
 
             $repos = array(
@@ -89,41 +89,57 @@
 
             );
 
-            $len = count($repos);
+            ?>
 
-            for ($i = 0; $i < $len; $i++) {
-
-                ?>
-
-                <h3><a href="<?php echo $repos[$i]['url']; ?>" target="_blank"><?php echo $repos[$i]['name']; ?></a></h3>
-                <p><?php echo $repos[$i]['description']; ?></p>
+            <div class="row">
 
                 <?php
 
-            }
+                $i = 0;
 
-            ?>
+                foreach ($repos as $r) {
 
+                    if ($i % 3 === 0) {
+                        echo "</div><div class='row'>";
+                    } ?>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <a href="<?php echo $r['url']; ?>"
+                                   target="_blank"><?php echo $r['name']; ?> </a>
+                                <p><?php echo $r['description']; ?></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php
+                    $i++;
+                }
+
+                ?>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 article footer"></div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 article footer"></div>
-    </div>
-</div>
 
 
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/typed.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
 
-<script>
-    $("document").ready(function () {
-        $(".texthelp").typed({
-            strings: ["> I can help you in your web project"],
-            typeSpeed: 0
+    <script>
+        $("document").ready(function () {
+            $(".texthelp").typed({
+                strings: ["> I can help you in your web project"],
+                typeSpeed: 0
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>
