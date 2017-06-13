@@ -35,10 +35,7 @@
         <div class="col-md-12 article">
             <h2>Skills</h2>
             <p>
-                I am a web developer for over 10 years. I live in São Paulo, Brazil. I've worked on projects involving
-                infrastructure, backend and frontend. I am always researching what's current in the field of web
-                development
-                and can add quality in projects that work.
+                I have been a web developer for over 10 years while based in Sao Paolo, Brazil. I am quite comfortable delivering quality projects that involve working in both the infrastructure back and front end. My research in the field of web development is never ending, which is apparent in the high quality of each and every project I deliver.
             </p>
         </div>
     </div>
